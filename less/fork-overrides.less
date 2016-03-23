@@ -194,6 +194,23 @@
 }
 
 
+// Ecom
+// -------------------------------------------------
+
+.ecomproduct .product-images .image {
+    max-height: 500px;
+    @media only screen and (max-width: 1024px) {
+        max-height: 400px;
+    }
+    @media @tablet {
+        max-height: 350px;
+    }
+    @media @mobile {
+        max-height: 200px;
+    }
+}
+
+
 // Footer
 // -------------------------------------------------
 
@@ -201,6 +218,3 @@
     margin-top: 0;
     background-color: transparent;
 }
-
-
-
