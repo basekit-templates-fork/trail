@@ -7,7 +7,7 @@
 }
 
 .blogpostlist .title-link {
-    color: @color__blogpostlist-title--text;
+    color: @color__blogpost-title--text;
 }
 
 // Read More Button
@@ -38,6 +38,11 @@
 // Older & Newer buttons
 
 .blogpostlist .post-list-footer {
+
+    @media @mobile {
+        margin-bottom: 20px;
+    }
+
     .pagination-list {
         display: inline-block;
         width: 100%;
@@ -45,6 +50,8 @@
     .button {
         padding: 4px 12px;
         background-color: @color__button--background--hover;
+        line-height: 2;
+        min-height: auto;
         &:hover {
             background-color: @color__button--background;
 
